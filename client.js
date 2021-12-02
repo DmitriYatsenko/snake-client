@@ -12,6 +12,7 @@ const connect = function () {
 
     conn.on("connect", () => {
         console.log("Connecting ...");
+        conn.write("Connection successful!");
     });
 
     return conn;
